@@ -53,6 +53,7 @@ define(['http', 'cheerio', 'iconv', 'utilities'], function(http, $, Iconv, Utili
         title: $(_body).find('.view h2').html(),
         image: $(_body).find('#media').html(),
         details: $details.html(),
+        description: $(_body).find('#view_primary_content').html(),
         thumbs: $(_body).find('#thumbs')[0],
         url: url
       };
