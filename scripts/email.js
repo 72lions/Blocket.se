@@ -8,6 +8,7 @@ define(['emailjs'], function(email) {
    * @param {String} username The username that will be used for connecting to the smtp server.
    * @param {String} password The password.
    * @param {String} host The host that we are going to connect to.
+   * @param {Number} port The port that we are going to connect to.
    * @param {Boolean} ssl Is set to true if we want to send via SSL.
    */
   var Emailer = function(username, password, host, ssl) {

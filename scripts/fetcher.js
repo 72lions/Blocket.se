@@ -125,7 +125,7 @@ define(['http', 'cheerio', 'utilities'], function(http, $, Utilities) {
      * @param  {Object} res The response.
      */
     var _onFetchSuccess = function(res) {
-      console.log('Got response' + res.statusCode, 'from', url);
+      console.log('Got response ' + res.statusCode, 'from', url);
       _body = '';
       res.setEncoding('utf8');
       res.on('data', _onFetchData);

@@ -17,16 +17,21 @@ define(['cheerio'], function($) {
      * @return {String} The formatted string.
      */
     this.formatForEmail = function(data) {
-      var $thumbs = $(data.thumbs);
-      $thumbs.find('li').attr('style', 'list-style:none; margin:0 10px 0 0; float:left;');
-      $thumbs.find('li:last-child').remove();
 
-      var thumbs = $thumbs.html();
-      var description = data.description;
+      var $thumbs = data.thumbs;
 
       var body = '<h2><a href="' + data.url + '">' + data.title + '</a></h2>';
       body += (data.image !== null ? data.image + '<br/>' : '');
-      body += '<p>' + description + '</p>';
+      body += '<h3>' + data.price + '</h3>';
+      body += '<ul style="clear:both">';
+      $thumbs.each(function(index) {
+        if (index != 0) {
+          $(this).attr('style', 'width: 100px');
+          body += '<li style="list-style:none; float:left">' + this + '</li>';
+        }
+      });
+      body += '</ul>';
+      body += '<p style="clear:both">' + data.description + '</p>';
       body += '<hr size="1" />';
 
       return body;

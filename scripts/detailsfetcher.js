@@ -51,10 +51,11 @@ define(['http', 'cheerio', 'iconv', 'utilities'], function(http, $, Iconv, Utili
 
       var data = {
         title: $(_body).find('.view h2').html(),
-        image: $(_body).find('#media').html(),
+        image: $(_body).find('.carousel-inner img').eq(0),
+        price: $(_body).find('.param-price span').text(),
         details: $details.html(),
-        description: $(_body).find('#view_primary_content').html(),
-        thumbs: $(_body).find('#thumbs')[0],
+        description: $(_body).find('.object-text').html(),
+        thumbs: $(_body).find('.carousel-inner img'),
         url: url
       };
 
