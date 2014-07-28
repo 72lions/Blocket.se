@@ -12,6 +12,7 @@ will install the dependencies.
 How to use
 ==========
 
+Rename the config.example.json to config.json.
 Open the config.json file and change the settings in there. Provide your
 email credentials like host, username, password so that it can use these to send
 you an email with all the new ads.  Change the "recipient" value to the email
