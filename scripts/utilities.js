@@ -16,23 +16,23 @@ define([], function() {
      */
     var _headers = [
       {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.60 Safari/537.11',
-        'Referer': 'http://hitta.se'
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/547.11 (KHTML, like Gecko) Chrome/33.0.1271.60 Safari/547.11',
+        'Referer': 'http://blocket.se'
       },
       {
-        'User-Agent': 'Mozilla/5.0 (Windows 7) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/22.0.1271.60 Safari/537.11',
-        'Referer': 'http://telenor.se'
+        'User-Agent': 'Mozilla/5.0 (Windows 7) AppleWebKit/547.11 (KHTML, like Gecko) Chrome/36.0.1271.60 Safari/547.11',
+        'Referer': 'http://tre.se'
       },
       {
-        'User-Agent': ' Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:15.0) Gecko/20100101 Firefox/15.0',
-        'Referer': 'http://hotmail.com'
+        'User-Agent': ' Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:23.0) Gecko/20100101 Firefox/23.0',
+        'Referer': 'http://gmail.com'
       },
       {
-        'User-Agent': ' Mozilla/5.0 (Windows Vista) Gecko/20100101 Firefox/14.0',
-        'Referer': 'http://in.com'
+        'User-Agent': ' Mozilla/5.0 (Windows 7) Gecko/20100101 Firefox/23.0',
+        'Referer': 'http://eniro.se'
       },
       {
-        'User-Agent': ' Mozilla/5.0 (Windows 7) Gecko/20100101 Firefox/13.0',
+        'User-Agent': ' Mozilla/5.0 (Windows 8) Gecko/20100101 Firefox/22.0',
         'Referer': 'http://hotmail.com'
       }
     ];
